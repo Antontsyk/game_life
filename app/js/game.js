@@ -63,10 +63,10 @@
             }
         }
         //вераем событие на весь объект
-        stage.on('click', function (e) {
+        stage.on('click touchstart', function (e) {
             //определяем на какой кубик было нажатие
             var el = e.target
-                //меняем его
+            //меняем его
             change_point.apply(el);
             //e.preventDefault();
         });

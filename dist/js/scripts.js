@@ -109,10 +109,10 @@ for(var i=0;i<n.length;i++)e=e.replace(new RegExp(n[i],"g"),"|"+n[i]);var a=e.sp
             }
         }
         //вераем событие на весь объект
-        stage.on('click', function (e) {
+        stage.on('click touchstart', function (e) {
             //определяем на какой кубик было нажатие
             var el = e.target
-                //меняем его
+            //меняем его
             change_point.apply(el);
             //e.preventDefault();
         });

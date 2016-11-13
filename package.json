@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Antontsyk/IRM_Developer.git"
+    "url": "git+https://github.com/Antontsyk/game_life"
   },
   "author": "Anton Tsyk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Antontsyk/IRM_Developer/issues"
+    "url": "https://github.com/Antontsyk/game_life/issues"
   },
-  "homepage": "https://github.com/Antontsyk/IRM_Developer#readme"
+  "homepage": "https://github.com/Antontsyk/game_life#readme"
 }
