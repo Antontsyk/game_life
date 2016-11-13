@@ -109,10 +109,10 @@ for(var i=0;i<n.length;i++)e=e.replace(new RegExp(n[i],"g"),"|"+n[i]);var a=e.sp
             }
         }
         //вераем событие на весь объект
-        stage.on('mousedown', function (e) {
+        stage.on('click', function (e) {
             //определяем на какой кубик было нажатие
             var el = e.target
-            //меняем его
+                //меняем его
             change_point.apply(el);
             //e.preventDefault();
         });
@@ -269,7 +269,7 @@ for(var i=0;i<n.length;i++)e=e.replace(new RegExp(n[i],"g"),"|"+n[i]);var a=e.sp
                 clearInterval(anim);
             }
         }
-        //вешаем события на кнопки
+    //вешаем события на кнопки
     var button_go = document.getElementById('go');
     var button_clear = document.getElementById('clear');
     var create = document.getElementById('create');

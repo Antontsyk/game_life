@@ -63,7 +63,7 @@
             }
         }
         //вераем событие на весь объект
-        stage.on('mousedown', function (e) {
+        stage.on('click', function (e) {
             //определяем на какой кубик было нажатие
             var el = e.target
                 //меняем его
