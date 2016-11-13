@@ -201,6 +201,7 @@ for(var i=0;i<n.length;i++)e=e.replace(new RegExp(n[i],"g"),"|"+n[i]);var a=e.sp
                     var the_same = 0; //колличество совпадений с предыдущёй итерацией
                     var el; //точка на данной итерации
                     var life_this; //состояние данной точки
+                    check_mass = [];
                     //прогон по всем точкам
                     for (var i = 0; i < count_line; i++) {
                         check_mass[i] = []; //делаем массив с состоянием точек двумерным                
@@ -221,7 +222,8 @@ for(var i=0;i<n.length;i++)e=e.replace(new RegExp(n[i],"g"),"|"+n[i]);var a=e.sp
                         }
                     }
                     //если массив предыдущих состояний пустой то заполним его 
-                    if (check_mass_last == '') {
+                    if (check_mass_last.length != count_line) {
+                        check_mass_last = [];
                         for (var i = 0; i < count_line; i++) {
                             check_mass_last[i] = []
                             for (var j = 0; j < count_line; j++) {
