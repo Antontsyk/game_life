@@ -66,7 +66,7 @@
         stage.on('mousedown', function (e) {
             //определяем на какой кубик было нажатие
             var el = e.target
-            //меняем его
+                //меняем его
             change_point.apply(el);
             //e.preventDefault();
         });
@@ -223,7 +223,7 @@
                 clearInterval(anim);
             }
         }
-        //вешаем события на кнопки
+    //вешаем события на кнопки
     var button_go = document.getElementById('go');
     var button_clear = document.getElementById('clear');
     var create = document.getElementById('create');
