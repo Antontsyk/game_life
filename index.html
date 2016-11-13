@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>     
+  <meta charset="utf-8">
+  <title>Game Life</title>
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #F0F0F0;
+        }
+        #buttons {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+        #buttons > input {
+            padding: 10px;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+ <button id="create">CREATE</button>
+ <input type="number" min="1" max="50" id="count_line" placeholder="n">
+ <button id="go">GO</button>
+ <button id="stop">STOP</button>
+ <button id="one_step">ONE STEP</button>
+ <button id="clear">CLEAR</button> 
+  <div id="container"></div>      
+</body>
+<script src="dist/js/scripts.min.js"></script>
+</html>

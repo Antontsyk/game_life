@@ -1,0 +1,213 @@
+.slicknav_open {
+    padding-left: .625em!important;
+    right: -54px;
+}
+
+.slicknav_btn {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    float: right;
+    padding: 0.438em 0.625em 0.438em 0.625em;
+    line-height: 1.125em;
+    cursor: pointer;
+    .slicknav_icon-bar + .slicknav_icon-bar {
+        margin-top: 0.188em;
+    }
+}
+
+.slicknav_menu {
+    *zoom: 1;
+    .slicknav_menutxt {
+        display: block;
+        line-height: 1.188em;
+        float: left;
+    }
+    .slicknav_icon {
+        float: left;
+        width: 2.125em;
+        height: .875em;
+        margin: 0.188em 0 0 0.438em;
+        &:before {
+            // Firefox Mobile v42 bugfix
+            background: transparent;
+            width: 1.125em;
+            height: 0.875em;
+            display: block;
+            content: "";
+            position: absolute;
+        }
+    }
+    .slicknav_no-text {
+        margin: 0;
+    }
+    .slicknav_icon-bar {
+        margin-top: 5px;
+        margin-left: 9px;
+        display: block;
+        width: 1.6em;
+        display: block;
+        height: .225em;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    }
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+.slicknav_nav {
+    clear: both;
+    ul {
+        display: block;
+    }
+    li {
+        display: block;
+    }
+    .slicknav_arrow {
+        display: none;
+        font-size: 1.2em;
+        margin: 0 0 0 0.4em;
+    }
+    .slicknav_item {
+        cursor: pointer;
+        a {
+            display: inline;
+        }
+    }
+    .slicknav_row {
+        display: block;
+    }
+    a {
+        display: block;
+    }
+    .slicknav_parent-link a {
+        display: inline;
+    }
+}
+
+.slicknav_brand {
+    float: left;
+}
+
+$color_0: rgba(255, 255, 255, 0.75);
+$color_btn: #7bc0f5;
+$color_text: #fff;
+$color_shadow: #000;
+$color_bg: #1c375e;
+$color_hover_bg: transparent;
+$color_hover_text: #ede617;
+.slicknav_menu {
+    z-index: 10;
+    position: fixed;
+    top: 126px;
+    //height: calc(100% - 140px);
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: #1c375e;
+    //padding: 5px;
+    //padding-top: 12px;
+    * {
+        box-sizing: border-box;
+    }
+    .slicknav_menutxt {
+        color: $color_text;
+        font-weight: bold;
+        //text-shadow: 0 1px 3px $color_shadow;
+    }
+    .slicknav_icon-bar {
+        background-color: $color_text;
+    }
+}
+
+.slicknav_btn {
+    padding-left: 9px;
+    height: 41px;
+    text-decoration: none;
+    //text-shadow: 0 1px 1px $color_0;		
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: $color_btn;
+}
+
+.slicknav_menu_uslugi {
+    .slicknav_btn {
+        border-radius: 0;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        float: inherit;
+        left: -33px;
+    }
+}
+
+.slicknav_nav {
+    width: 200px;
+    color: $color_text;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875em;
+    list-style: none;
+    overflow-y: auto!important;
+    height: 255px;
+    ul {
+        list-style: none;
+        overflow-y: auto;
+        height: 100%;
+        padding: 0;
+        margin: 0 0 0 20px;
+    }
+    .slicknav_row {
+        padding: 5px 10px;
+        margin: 2px 5px;
+        &:hover {
+            border-radius: 6px;
+            background: $color_hover_bg;
+            color: $color_text;
+        }
+    }
+    a {
+        padding: 7px 10px;
+        margin: 2px 5px;
+        text-decoration: none;
+        color: $color_text;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1px;
+        &:hover {
+            border-radius: 6px;
+            background: $color_hover_bg;
+            color: $color_hover_text;
+        }
+    }
+    .slicknav_txtnode {
+        margin-left: 15px;
+    }
+    .slicknav_item a {
+        padding: 0;
+        margin: 0;
+    }
+    .slicknav_parent-link a {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.slicknav_brand {
+    color: $color_text;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 7px 12px;
+    height: 44px;
+}
